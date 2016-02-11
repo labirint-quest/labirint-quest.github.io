@@ -1,0 +1,308 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=latin,cyrillic);
+@font-face {
+    font-family: 'AleksandraC';
+    src: local('AleksandraCRegular'), url('fonts/aleksandracregular.woff2') format('woff2'), url('fonts/aleksandracregular.woff') format('woff'), url('fonts/aleksandracregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Basic */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, 
+td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	outline: none;
+	color: white;
+}
+
+html {
+	overflow-x: hidden;
+	font-family: Arial;
+	background: #261926;
+	color: white;
+}
+
+
+/* Basic end */
+
+
+/* Header */
+
+header {
+	width: 100%;
+	min-height: 758px;
+	max-height: 1060px;
+	background-position: bottom;
+	background-size: 100% auto;
+	color: white;
+	position: relative;
+}
+
+.logo {
+	width: 300px;
+	height: 146px;
+	background: url(images/logo.png) no-repeat;
+	background-size: 300px auto;
+	margin: 0.5em auto 0 auto;
+	padding-left: 10px;
+	-webkit-filter: drop-shadow(0 0 5px black) drop-shadow(0 0 5px black);
+	filter: drop-shadow(0 0 5px black) drop-shadow(0 0 5px black);
+}
+
+.logo h2 {
+	width: 30px;
+	height: 30px;
+	font-size: 1em;
+	font-weight: 400;
+	float: right;
+	position: relative;
+	left: 70px;
+	top: -15px;
+	background: url(images/flag.png) no-repeat;
+	background-size: 20px auto;
+	text-align: right;
+	padding-left: 30px;
+	padding-top: 2px;
+	font-size: 0.8em;
+}
+
+.description {
+	font-size: 1.15rem;
+	width: 55%;
+	position: absolute;
+	bottom: 35px;
+	left: 3rem;
+	background-position: left center;
+	background-size: 140px auto;
+	-webkit-filter: drop-shadow(0 0 5px black) drop-shadow(0 0 5px black);
+	filter: drop-shadow(0 0 5px black) drop-shadow(0 0 5px black);
+	font-family: 'AleksandraC';
+}
+
+h1 {
+	font-weight: 400;
+	font-family: 'Comfortaa';
+	margin-bottom: 0.2em;
+}
+
+/* Header end */
+
+
+/* Navigation */
+
+nav {
+	text-align: center;
+	padding-top: 10px;
+	position: relative;
+	left: -25px;
+}
+
+header nav a {
+	height: 60px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	margin-left:  5.1rem;
+	padding-top: 40px;
+	background-position: top center;
+	font-size: 0.8em;
+	-webkit-filter: drop-shadow(0 0 5px black);
+	filter: drop-shadow(0 0 5px black);
+}
+
+/* background-position need in each(!) a */
+
+header nav a:nth-of-type(1) {
+	background: url(images/world.png) no-repeat;
+	background-position: top center;
+}
+
+header nav a:nth-of-type(2) {
+	background: url(images/calendar.png) no-repeat;
+	background-position: top center;
+}
+
+header nav a:nth-of-type(3) {
+	background: url(images/star.png) no-repeat;
+	background-position: top center;
+	position: relative;
+}
+
+header nav a:nth-of-type(4) {
+	background: url(images/search.png) no-repeat;
+	background-position: top center;
+}
+
+header nav a:nth-of-type(5) {
+	background: url(images/location.png) no-repeat;
+	background-position: top center;
+}
+
+header nav a:nth-of-type(6) {
+	background: url(images/key.png) no-repeat;
+	background-position: top center;
+}
+
+/* Navigation end */
+
+
+/* Main */
+
+main {
+	width: 100%;
+	background: linear-gradient(to bottom, #251926, #c22e36);
+	position: relative;
+	font-family: 'Comfortaa';
+}
+
+main h2 {
+	font-weight: 400;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.date {
+	display: block;
+	margin-top: 10px;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+/* Main end */
+
+
+/* Table */
+
+.table {
+	width: 60em;
+	min-height: 20em;
+	background: white;
+	margin: 2em auto 0 auto;
+	color: black;
+	padding: 1.7em 0 0.3em 0.9em;
+	font-size: 1.3em;
+}
+
+.price_block {
+	width: 100%;
+	display: block;
+	margin-bottom: 2.5em;
+}
+
+.price_block aside {
+	width: 11%;
+	float: left;
+	font-family: 'Comfortaa', cursive;
+}
+
+.time_block {
+	width: 100%;
+}
+
+.price {
+	display: inline-block;
+	position: relative;
+	left: 1.9em;
+}
+
+.bottom_price {
+	text-align: center;
+	position: relative;
+	top: 1.2em;
+	color: #c13037;
+	background: url(images/line.png) repeat-x;
+	background-position: 0 34%;
+}
+
+.time {
+	width: 4.1em;
+	height: 1.4em;
+	display: block;
+	float: left;
+	font-size: 1.1em;
+	text-align: center;
+	border-left: 1px #c13037 solid;
+}
+
+.price .time:first-of-type {
+	width: 3.45em;
+	padding: 0 0.8em 0 0;
+}
+
+.price:first-of-type  .time:first-of-type {
+	width: 3.45em;
+	padding: 0 0.8em 0 0;
+	border: none;
+}
+
+.price .time:first-of-type:before {
+	content: "";
+	width: 0.655em;
+	height: 0.65em;
+	display: inline-block;
+	position: relative;
+	background: url(images/small_circle.jpg) no-repeat;
+	background-size: 100% 100%;
+	top: 1.29em;
+	left: -0.55em;
+	z-index: 5;
+}
+
+
+
+/* Table end */
+
+
+/* Footer */
+
+footer {
+	width: 100%;
+	padding-top: 5em;
+	padding-bottom: 4em;
+	position: relative;
+	font-family: 'Comfortaa', cursive;
+}
+
+footer nav a {
+	display: inline-block;
+	margin: 0 2.7em;
+	color: white;
+	border-bottom: 2px #f34c55 solid;
+	text-decoration: none;
+}
+
+footer .labirint {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.to_top {
+	width: 100px;
+	height: 100px;
+	background: url(images/to_top.png);
+	background-size: 100% auto;
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	bottom: 250px;
+}
+
+/* Footer end */
